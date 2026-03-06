@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean | Personal Portfolio</title>
+    <link rel="stylesheet" href="css/CISC3003-SugEx02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">My Personal Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#values">Values and Beliefs</a></li>
+                <li><a href="#career">Career Aspirations</a></li>
+                <li><a href="#interests">Interests & Hobbies</a></li>
+                <li><a href="#blog">Blog Posts</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="highlight">Sean</span></h1>
+            <p class="tagline">DC328023</p>
+            <a href="#about" class="cta-button">Strat</a>
+        </div>
+    </section>
+
+
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/personal/portrait-1.jpg" alt="Professional portrait of Sean">
+            </div>
+            <div class="about-content">
+                <h3>Who I Am</h3>
+                <p>&ensp;I'm Jiang Xingyu, I'm from Sichuan province. I'm a junior student majoring
+                in computer information and science.</p>
+                <div class="personal-details">
+                    <p><strong>Student ID:</strong> DC328023</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="values" class="section dark-bg">
+        <h2 class="section-title">My Values & Beliefs</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Integrity</h3>
+                <p>I like Integrity.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovation</h3>
+                <p>I like innovation.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-heart"></i>
+                <h3>Empathy</h3>
+                <p>I like Empathy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="section">
+        <h2 class="section-title">My Career Aspirations</h2>
+        <div class="career-path">
+            <img src="images/personal/portrait-2.jpg" alt="Sean working" class="career-img">
+            <div class="career-text">
+                <h3>Where I'm Heading</h3>
+                <p>I'm heading for working in computer science realm.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interests" class="section">
+        <h2 class="section-title">My Interests & Hobbies</h2>
+        <div class="hobbies-gallery">
+            <div class="hobby-item">
+                <img src="images/personal/portrait-3.jpg" alt="Sean doing hobby 1">
+                <h4>Gaming</h4>
+                <p>I like gaming.</p>
+            </div>
+            <div class="hobby-item">
+                <img src="images/personal/portrait-4.jpg" alt="Sean doing hobby 2">
+                <h4>Swimming</h4>
+                <p>I like swimming.</p>
+            </div>
+            <div class="hobby-item">
+                <img src="images/personal/portrait-5.jpg" alt="Sean doing hobby 3">
+                <h4>Playing billiard</h4>
+                <p>I like playing billiard.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section dark-bg">
+        <h2 class="section-title">My Blog Posts</h2>
+        <div class="blog-preview">
+            <article class="blog-card">
+                <h3>Why do I like gaming.</h3>
+                <p class="blog-date">Posted: 2026/2/29</p>
+                <p>Gaming is fun.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+            <article class="blog-card">
+                <h3>Why do I like swimming.</h3>
+                <p class="blog-date">Posted: 2026/2/29</p>
+                <p>Swimming is cool.</p>
+                <a href="#" class="read-more">Read More</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-envelope"></i> dc32802@um.edu.mo</p>
+                <p><i class="fas fa-phone"></i> 1111222333</p>
+                <p><i class="fas fa-map-marker-alt"></i> Macau</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="4" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">CISC3003 Web Programming - 2026: DC328023 Jiang Xingyu</p>
+            <p class="copyright">&copy; 2026 Sean Jiang. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>

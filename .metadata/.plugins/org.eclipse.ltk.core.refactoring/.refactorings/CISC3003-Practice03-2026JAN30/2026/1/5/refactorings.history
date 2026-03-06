@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;CISC3003-Practice03-2026JAN30/public/cisc3003-practice03.html&apos; to &apos;cisc3003-practice03-before.html&apos;" description="Rename resource &apos;cisc3003-practice03.html&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="public/cisc3003-practice03.html" name="cisc3003-practice03-before.html" stamp="1769766593062" updateReferences="true"/>
+</session>

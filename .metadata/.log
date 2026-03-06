@@ -1,0 +1,983 @@
+!SESSION 2026-01-30 16:09:51.563 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 16:09:56.092
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-01-30 16:11:43.749
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-01-30 16:31:27.280
+!MESSAGE Connection to https://www.caucho.com/eclipse/site.xml failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-01-30 16:31:28.458
+!MESSAGE Connection to https://www.caucho.com/eclipse/p2.index failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-01-30 17:56:26.394
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-01-30 17:56:26.883
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-01-30 17:56:26.926
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+!SESSION 2026-02-05 22:27:24.260 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-05 22:28:26.872
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-02-05 22:28:51.796
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-05 22:28:55.496
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-02-05 22:54:31.910 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-06 12:30:45.484
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-02-06 12:30:56.595
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-02-06 12:30:59.592
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-02-11 14:23:47.261 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-01 18:08:38.543
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-01 18:08:57.099
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-01 18:09:01.076
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-03-01 18:24:17.238
+!MESSAGE Connection to https://www.caucho.com/eclipse/site.xml failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-03-01 18:24:18.469
+!MESSAGE Connection to https://www.caucho.com/eclipse/p2.index failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-03-01 18:25:15.113
+!MESSAGE Connection to https://www.caucho.com/eclipse/site.xml failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2026-03-01 18:25:16.234
+!MESSAGE Connection to https://www.caucho.com/eclipse/p2.index failed on (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target. Retry attempt 0 started
+!STACK 0
+javax.net.ssl.SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:130)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:383)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:326)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1287)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1164)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1107)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:393)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:477)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:448)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:206)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1506)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1421)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:455)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:426)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.executeHandshake(SSLConnectionSocketFactory.java:350)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:318)
+	at org.apache.hc.client5.http.ssl.SSLConnectionSocketFactory.createLayeredSocket(SSLConnectionSocketFactory.java:303)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManagerBuilder.lambda$setSSLSocketFactory$0(PoolingHttpClientConnectionManagerBuilder.java:125)
+	at org.apache.hc.client5.http.impl.io.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:234)
+	at org.apache.hc.client5.http.impl.io.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:497)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:164)
+	at org.apache.hc.client5.http.impl.classic.InternalExecRuntime.connectEndpoint(InternalExecRuntime.java:174)
+	at org.apache.hc.client5.http.impl.classic.ConnectExec.execute(ConnectExec.java:144)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.ContentCompressionExec.execute(ContentCompressionExec.java:151)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.HttpRequestRetryExec.execute(HttpRequestRetryExec.java:112)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.hc.client5.http.impl.classic.ExecChainElement.execute(ExecChainElement.java:51)
+	at org.apache.hc.client5.http.impl.classic.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.hc.client5.http.impl.classic.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer.performConnect(HttpClientRetrieveFileTransfer.java:1009)
+	at org.eclipse.ecf.provider.filetransfer.httpclient5.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:997)
+	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:388)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:271)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:256)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:241)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:113)
+	at org.eclipse.core.internal.runtime.CollectionTrustManager.checkServerTrusted(CollectionTrustManager.java:60)
+	at java.base/sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:1430)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1271)
+	... 35 more
+	Suppressed: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		... 43 more
+	Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+		at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+		at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+		at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+		... 42 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:148)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:129)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:383)
+	... 42 more
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-03-01 19:01:16.167
+!MESSAGE Could not get language server due to timeout after 50 milliseconds
+
+!ENTRY org.eclipse.lsp4e 2 0 2026-03-01 19:01:17.193
+!MESSAGE Could not get if the workspace folder capability is supported due to timeout after 1 second
+
+!ENTRY org.eclipse.egit.ui 4 0 2026-03-01 21:21:05.076
+!MESSAGE Can't connect to any repository: 
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:30:21.457
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:30:59.773
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:32:08.380
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:33:57.169
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:695)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.egit.ui 4 0 2026-03-01 21:33:57.179
+!MESSAGE Can't connect to any repository: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub (https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: not authorized)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:36:48.345
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:702)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:37:06.394
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:702)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:39:10.190
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:702)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.egit.core 4 0 2026-03-01 21:39:44.387
+!MESSAGE An exception occurred during push on URI https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub: git-receive-pack not permitted on 'https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/'
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:702)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:637)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:541)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:140)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	at org.eclipse.egit.ui.internal.push.ConfirmationPage$2.run(ConfirmationPage.java:204)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+
+!ENTRY org.eclipse.core.jobs 2 2 2026-03-02 14:45:36.339
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.egit.ui.internal.push.PushJob RUNNING
+	 at java.base/sun.nio.ch.Net.poll(Native Method)
+	 at java.base/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:191)
+	 at java.base/sun.nio.ch.NioSocketImpl.park(NioSocketImpl.java:201)
+	 at java.base/sun.nio.ch.NioSocketImpl.implWrite(NioSocketImpl.java:412)
+	 at java.base/sun.nio.ch.NioSocketImpl.write(NioSocketImpl.java:440)
+	 at java.base/sun.nio.ch.NioSocketImpl$2.write(NioSocketImpl.java:819)
+	 at java.base/java.net.Socket$SocketOutputStream.write(Socket.java:1195)
+	 at java.base/sun.security.ssl.SSLSocketOutputRecord.deliver(SSLSocketOutputRecord.java:345)
+	 at java.base/sun.security.ssl.SSLSocketImpl$AppOutputStream.write(SSLSocketImpl.java:1304)
+	 at org.apache.http.impl.io.SessionOutputBufferImpl.streamWrite(SessionOutputBufferImpl.java:124)
+	 at org.apache.http.impl.io.SessionOutputBufferImpl.flushBuffer(SessionOutputBufferImpl.java:136)
+	 at org.apache.http.impl.io.SessionOutputBufferImpl.write(SessionOutputBufferImpl.java:167)
+	 at org.apache.http.impl.io.SessionOutputBufferImpl.write(SessionOutputBufferImpl.java:179)
+	 at org.apache.http.impl.io.SessionOutputBufferImpl.writeLine(SessionOutputBufferImpl.java:219)
+	 at org.apache.http.impl.io.ChunkedOutputStream.flushCacheWithAppend(ChunkedOutputStream.java:123)
+	 at org.apache.http.impl.io.ChunkedOutputStream.write(ChunkedOutputStream.java:179)
+	 at org.eclipse.jgit.util.TemporaryBuffer$LocalFile.writeTo(TemporaryBuffer.java:524)
+	 at org.eclipse.jgit.transport.http.apache.TemporaryBufferEntity.writeTo(TemporaryBufferEntity.java:71)
+	 at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestEntity(DefaultBHttpClientConnection.java:156)
+	 at org.apache.http.impl.conn.CPoolProxy.sendRequestEntity(CPoolProxy.java:152)
+	 at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	 at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	 at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	 at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	 at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	 at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	 at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	 at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	 at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	 at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	 at org.eclipse.jgit.transport.http.apache.HttpClientConnection.execute(HttpClientConnection.java:290)
+	 at org.eclipse.jgit.transport.http.apache.HttpClientConnection.getResponseCode(HttpClientConnection.java:260)
+	 at org.eclipse.jgit.util.HttpSupport.response(HttpSupport.java:232)
+	 at org.eclipse.jgit.transport.TransportHttp$Service.openResponse(TransportHttp.java:1828)
+	 at org.eclipse.jgit.transport.TransportHttp$MultiRequestService.execute(TransportHttp.java:1936)
+	 at org.eclipse.jgit.transport.TransportHttp$Service$HttpExecuteStream.read(TransportHttp.java:1860)
+	 at org.eclipse.jgit.util.io.UnionInputStream.read(UnionInputStream.java:114)
+	 at java.base/java.io.FilterInputStream.read(FilterInputStream.java:119)
+	 at org.eclipse.jgit.util.io.TimeoutInputStream.read(TimeoutInputStream.java:87)
+	 at java.base/java.io.InputStream.readNBytes(InputStream.java:509)
+	 at org.eclipse.jgit.util.IO.readFully(IO.java:142)
+	 at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:305)
+	 at org.eclipse.jgit.transport.SideBandInputStream.needDataPacket(SideBandInputStream.java:128)
+	 at org.eclipse.jgit.transport.SideBandInputStream.read(SideBandInputStream.java:110)
+	 at java.base/java.io.InputStream.readNBytes(InputStream.java:509)
+	 at org.eclipse.jgit.util.IO.readFully(IO.java:142)
+	 at org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:305)
+	 at org.eclipse.jgit.transport.PacketLineIn.readString(PacketLineIn.java:169)
+	 at org.eclipse.jgit.transport.BasePackPushConnection.readStringLongTimeout(BasePackPushConnection.java:407)
+	 at org.eclipse.jgit.transport.BasePackPushConnection.readStatusReport(BasePackPushConnection.java:340)
+	 at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:188)
+	 at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:1602)
+	 at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:137)
+	 at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:181)
+	 at org.eclipse.jgit.transport.Transport.push(Transport.java:1533)
+	 at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:269)
+	 at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	 at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2026-03-02 14:45:52.211 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 14:45:57.129
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 14:45:59.765
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2026-03-02 14:46:00.376
+!MESSAGE Unable to load resource file:/Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+!STACK 0
+org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: org.eclipse.emf.ecore.xmi.UnresolvedReferenceException: Unresolved reference '_veL-rQMWEfGFtePn0yL4ng'. (file:/Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi, 150, 172)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.handleDemandLoadException(ResourceSetImpl.java:319)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:278)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:406)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.getResource(ResourceHandler.java:287)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadResource(ResourceHandler.java:263)
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:166)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:371)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:247)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:603)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+Caused by: org.eclipse.emf.ecore.xmi.UnresolvedReferenceException: Unresolved reference '_veL-rQMWEfGFtePn0yL4ng'. (file:/Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi, 150, 172)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.handleForwardReferences(XMLHandler.java:1207)
+	at org.eclipse.emf.ecore.xmi.impl.XMLHandler.endDocument(XMLHandler.java:1292)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.endDocument(AbstractSAXParser.java:754)
+	at java.xml/com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:547)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:889)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:825)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1224)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:637)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:326)
+	at org.eclipse.emf.ecore.xmi.impl.XMLLoadImpl.load(XMLLoadImpl.java:175)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:260)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1563)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1342)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoad(ResourceSetImpl.java:259)
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.demandLoadHelper(ResourceSetImpl.java:274)
+	... 21 more
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2026-03-02 14:46:00.379
+!MESSAGE The persisted application model has no top-level window. Reinitializing with the default application model.
+!STACK 0
+java.lang.Exception
+	at org.eclipse.e4.ui.internal.workbench.ResourceHandler.loadMostRecentModel(ResourceHandler.java:171)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.loadApplicationModel(E4Application.java:371)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:247)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:603)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:185)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+!SESSION 2026-03-02 14:49:33.578 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 14:49:38.565
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 14:49:40.769
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-02 15:03:30.354 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 15:03:36.627
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-02 15:03:39.564
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-03 18:12:18.218 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:12:24.535
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:12:27.590
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-03 18:17:41.858 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring -data /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:17:46.757
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:17:49.202
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-03 18:25:53.733 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring -data /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:25:59.031
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-03 18:26:01.702
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003-2026/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.egit.ui 4 0 2026-03-03 18:33:38.044
+!MESSAGE Transport Error: Cannot get remote repository refs.
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/tree/main/CISC3003-dc328023-2026: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/tree/main/CISC3003-dc328023-2026/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:192)
+	at org.eclipse.jgit.api.LsRemoteCommand.call(LsRemoteCommand.java:131)
+	at org.eclipse.egit.core.op.ListRemoteOperation.run(ListRemoteOperation.java:116)
+	at org.eclipse.egit.ui.internal.components.RefSpecPage$2.run(RefSpecPage.java:254)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:123)
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/tree/main/CISC3003-dc328023-2026: https://github.com/bishoujodaisuki/CISC3003-dc328023-2026GitHub/tree/main/CISC3003-dc328023-2026/info/refs?service=git-upload-pack not found: Not Found
+	at org.eclipse.jgit.transport.TransportHttp.createNotFoundException(TransportHttp.java:610)
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:678)
+	at org.eclipse.jgit.transport.TransportHttp.openFetch(TransportHttp.java:466)
+	at org.eclipse.jgit.api.LsRemoteCommand.execute(LsRemoteCommand.java:170)
+	... 4 more
+!SESSION 2026-03-06 17:46:35.676 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring -data /Users/vandarkhorme/Desktop/cisc3003/CISC3003-dc328023-2026
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 17:46:50.210
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2026-03-06 17:46:55.583
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2026-03-06 17:46:55.773
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2026-03-06 17:46:55.773
+!MESSAGE Could not read metadata for 'CISC3003-Practice02-2026JAN23'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/CISC3003-Practice02-2026JAN23)[567]: java.lang.Exception: The project description file (.project) for 'CISC3003-Practice02-2026JAN23' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:1011)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:1004)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:983)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:825)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1689)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2677)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2369)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:838)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:830)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:780)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1082)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:418)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:523)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2026-03-06 17:46:55.786
+!MESSAGE The project description file (.project) for 'CISC3003-Practice02-2026JAN23' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'CISC3003-Practice02-2026JAN23' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:1011)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:1004)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:983)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:825)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1689)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2677)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2369)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:591)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:257)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:184)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:565)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:838)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:830)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:780)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1082)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:394)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:643)
+	at org.eclipse.osgi.container.Module.start(Module.java:500)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:528)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:122)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:620)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:353)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:418)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:523)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:439)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:186)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:615)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:563)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1415)
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 17:46:57.344
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+!SESSION 2026-03-06 20:35:47.556 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 20:35:51.812
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 20:35:54.560
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml
+
+!ENTRY org.eclipse.ui.ide 4 4 2026-03-06 20:51:31.900
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2026-03-06 20:51:31.910
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2026-03-06 20:51:31.910
+!MESSAGE The project description file (.project) for '.org.eclipse.egit.core.cmp' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2026-03-06 20:54:03.408 -----------------------------------------------
+eclipse.buildId=4.38.0.20251204-0849
+java.version=21.0.9
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN_#Hans
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/vandarkhorme/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 20:54:07.090
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2026-03-06 20:54:09.065
+!MESSAGE Logback config file: /Users/vandarkhorme/Desktop/cisc3003/CISC3003-dc328023-2026/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.7.101.20251017-1242.xml

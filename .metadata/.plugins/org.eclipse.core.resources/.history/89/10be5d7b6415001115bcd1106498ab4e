@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Jiang | 作品集</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome 图标库 (用于联系图标的可选项) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">Sean Jiang</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 英雄区 Hero -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1>Sean Jiang</h1>
+                    <p class="subtitle">Frontend Developer & CS Student</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary">Download CV</a>
+                        <a href="#contact" class="btn btn-outline">Contact Info</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/personal/portrait-1.jpg" alt="Sean Jiang portrait">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me 部分 (对应截图19.36.14) -->
+        <section id="about" class="section about">
+            <div class="container">
+                <p class="section-subtitle">Get To Know More</p>
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <!-- 左侧：经验与教育卡片 -->
+                    <div class="about-left">
+                        <div class="cards-grid">
+                            <div class="info-card">
+                                <h3>Experience</h3>
+                                <p class="years">1+ years</p>
+                                <p>Frontend Development<br>(Course Projects)</p>
+                            </div>
+                            <div class="info-card">
+                                <h3>Education</h3>
+                                <p class="degree">B.Sc. Computer Information Science</p>
+                                <p>University of Macau<br>2023 – 2027</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧：描述文字 -->
+                    <div class="about-right">
+                        <p>I'm Jiang Xingyu (Sean), from Sichuan province. I'm a junior student majoring in Computer Information Science at the University of Macau. Passionate about building clean, responsive web interfaces and exploring data visualization. I enjoy solving problems and continuously learning new technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 技术经验部分 (对应截图19.36.27) -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <p class="section-subtitle">Explore My</p>
+                <h2 class="section-title">Experience</h2>
+                <div class="exp-grid">
+                    <!-- 前端技能列 -->
+                    <div class="exp-col">
+                        <h3>Frontend Development</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">HTML</span> <span class="skill-level">Experienced</span></li>
+                            <li><span class="skill-name">CSS</span> <span class="skill-level">Experienced</span></li>
+                            <li><span class="skill-name">SASS</span> <span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">JavaScript</span> <span class="skill-level">Basic</span></li>
+                            <li><span class="skill-name">TypeScript</span> <span class="skill-level">Basic</span></li>
+                        </ul>
+                    </div>
+                    <!-- 后端/工具技能列 -->
+                    <div class="exp-col">
+                        <h3>Backend & Tools</h3>
+                        <ul class="skill-list">
+                            <li><span class="skill-name">PostgreSQL</span> <span class="skill-level">Basic</span></li>
+                            <li><span class="skill-name">Express JS</span> <span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Node JS</span> <span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Git</span> <span class="skill-level">Intermediate</span></li>
+                            <li><span class="skill-name">Python</span> <span class="skill-level">Basic</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 项目部分 (对应截图19.36.38) -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <p class="section-subtitle">Browse My Recent</p>
+                <h2 class="section-title">Projects</h2>
+                <p class="projects-tagline">Better Communication with Each Other</p>
+                <div class="projects-grid">
+                    <!-- 项目 1 -->
+                    <div class="project-card">
+                        <h3>Project One</h3>
+                        <p>Personal Portfolio Website</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">GitHub</a>
+                            <a href="#" class="btn-small">Live Demo</a>
+                        </div>
+                    </div>
+                    <!-- 项目 2 -->
+                    <div class="project-card">
+                        <h3>Project Two</h3>
+                        <p>Task Management App</p>
+                        <div class="project-links">
+                            <a href="#" class="btn-small">GitHub</a>
+                            <a href="#" class="btn-small">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系部分 (对应截图19.37.07) -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <p class="section-subtitle">Get in Touch</p>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-info">
+                    <p><i class="far fa-envelope"></i> dc32802@um.edu.mo</p>
+                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/sean-jiang</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright © 2026 Sean Jiang. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

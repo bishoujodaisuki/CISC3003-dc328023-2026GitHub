@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean | Showcase</title>
+    <link rel="stylesheet" href="css/cisc3003-IndAssgn-showcase.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar"><!-- 同前，略 --></header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2 class="page-title">Design Showcase</h2>
+                <div style="display:flex; gap:2rem; flex-wrap:wrap; justify-content:center;">
+                    <div style="max-width:300px;">
+                        <img src="images/personal/showcase1.jpg" alt="UI Design" style="width:100%; border-radius:12px;">
+                        <p>Weather App UI Concept</p>
+                    </div>
+                    <div style="max-width:300px;">
+                        <img src="images/personal/showcase2.jpg" alt="3D Model" style="width:100%; border-radius:12px;">
+                        <p>Low-poly Campus Model</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><!-- 同前，略 --></footer>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;cisc3003-practice03.css&apos; to &apos;css&apos;" description="Move &apos;cisc3003-practice03.css&apos; to &apos;css&apos;" destination="public/css" element1="/CISC3003-IndAssgn-2026MAR01/public/css/cisc3003-practice03.css" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1772373689527" updateReferences="true"/>
+</session>
