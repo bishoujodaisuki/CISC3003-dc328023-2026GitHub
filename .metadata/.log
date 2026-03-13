@@ -1291,3 +1291,36 @@ java.lang.Exception: The project description file (.project) for 'CISC3003-Pract
 	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:234)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-13 21:27:43.840
+!MESSAGE [Info]	ESLint server running in node v22.21.1
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-13 21:27:43.963
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.9.3 from path "/Applications/Eclipse JEE.app/Contents/Eclipse/plugins/org.eclipse.wildwebdeveloper_1.2.7.202511281815/node_modules/typescript/lib/tsserver.js"
+
+!ENTRY org.eclipse.jface 2 0 2026-03-13 21:27:43.999
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2026-03-13 21:27:43.999
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolInWorkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolInWorkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-13 21:27:44.030
+!MESSAGE [Info]	Typescript Server version info: {version=5.9.3, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2026-03-13 21:33:18.670
+!MESSAGE [Info]	ESLint server running in node v22.21.1
