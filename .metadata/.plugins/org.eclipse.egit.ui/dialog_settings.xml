@@ -25,8 +25,8 @@
 	<section name="GitCommitMessageComponent">
 	</section>
 	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="401"/>
-		<item key="DIALOG_Y_ORIGIN" value="141"/>
+		<item key="DIALOG_X_ORIGIN" value="522"/>
+		<item key="DIALOG_Y_ORIGIN" value="145"/>
 		<item key="DIALOG_WIDTH" value="650"/>
 		<item key="DIALOG_HEIGHT" value="513"/>
 		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
