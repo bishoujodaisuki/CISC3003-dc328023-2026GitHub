@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="CommitDialog.authorValues">
+		<item value="Sean &lt;155603862+bishoujodaisuki@users.noreply.github.com&gt;"/>
 		<item value="vandarkhorme &lt;vandarkhorme@localhost&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
+		<item value="Sean &lt;155603862+bishoujodaisuki@users.noreply.github.com&gt;"/>
 		<item value="vandarkhorme &lt;vandarkhorme@localhost&gt;"/>
 	</list>
 	<list key="EGit.KnownHosts">
@@ -34,5 +36,12 @@
 		</list>
 	</section>
 	<section name="FetchGerritChangePage">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="372"/>
+		<item key="DIALOG_Y_ORIGIN" value="167"/>
+		<item key="DIALOG_WIDTH" value="685"/>
+		<item key="DIALOG_HEIGHT" value="400"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
 	</section>
 </section>
