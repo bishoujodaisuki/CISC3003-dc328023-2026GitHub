@@ -10,17 +10,18 @@
     <h1 class="page-title">dc328023 Jiang Xingyu — CISC3003 Mid-Term Paper 01 Part 04</h1>
 
     <article class="auth-card auth-card--signin" id="authCard">
+        <h2 class="page-title">Account sign-in and registration</h2>
         <section class="auth-card__pane auth-card__pane--a" aria-label="Primary panel">
             <div class="pane-stack pane-stack--a">
                 <div class="pane-stack__layer layer-signin">
-                    <h1>Log In</h1>
+                    <h2 class="form-panel-heading">Log In</h2>
                     <div class="social-row">
                         <a class="social-btn" href="#" aria-label="Facebook">f</a>
                         <a class="social-btn" href="#" aria-label="Google Plus">G+</a>
                         <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
                     </div>
                     <p class="tagline">Use your account to sign in</p>
-                    <form class="form-fields" id="formSignIn" action="" method="get">
+                    <form class="form-fields" id="formSignIn" method="get">
                         <input type="email" name="email" id="signin-email" placeholder="Email" required autocomplete="email">
                         <input type="password" name="password" id="signin-password" placeholder="Password" required autocomplete="current-password">
                         <a class="forgot" href="#">Forgot Password?</a>
@@ -49,14 +50,14 @@
                     <button type="button" class="btn-pill btn-pill--ghost" id="btnShowSignUp">Sign Up</button>
                 </div>
                 <div class="pane-stack__layer layer-signup-form">
-                    <h1>Join Us</h1>
+                    <h2 class="form-panel-heading">Join Us</h2>
                     <div class="social-row">
                         <a class="social-btn" href="#" aria-label="Facebook">f</a>
                         <a class="social-btn" href="#" aria-label="Google Plus">G+</a>
                         <a class="social-btn" href="#" aria-label="LinkedIn">in</a>
                     </div>
                     <p class="tagline">Use your email to sign up</p>
-                    <form class="form-fields" id="formSignUp" action="" method="get">
+                    <form class="form-fields" id="formSignUp" method="get">
                         <input type="text" name="fullname" id="signup-name" placeholder="Full Name" required autocomplete="name">
                         <input type="email" name="email" id="signup-email" placeholder="Email" required autocomplete="email">
                         <input type="password" name="create_password" id="signup-password" placeholder="Create Password" required autocomplete="new-password">

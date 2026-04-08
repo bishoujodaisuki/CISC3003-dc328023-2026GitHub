@@ -130,6 +130,10 @@ h2 {
     margin: 0 0 20px;
 }
 
+.form-panel-heading {
+    font-size: 1.75rem;
+}
+
 .tagline {
     font-size: 0.9rem;
     color: var(--grey-text);
