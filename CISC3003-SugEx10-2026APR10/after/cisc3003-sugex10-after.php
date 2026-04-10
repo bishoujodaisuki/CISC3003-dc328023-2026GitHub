@@ -81,10 +81,10 @@ if ($selected_customer_id) {
                       <tbody>
 <?php foreach ($customers as $c) { ?>
                         <tr>
-                          <td class="mdl-data-table__cell--non-numeric"><a href="cisc3003-sugex10-after.php?customer_id=<?php echo htmlspecialchars($c['id']); ?>"><?php echo htmlspecialchars($c['first_name'] . ' ' . $c['last_name']); ?></a></td>
-                          <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($c['university']); ?></td>
-                          <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($c['city']); ?></td>
-                          <td><span class="sparkline"><?php echo htmlspecialchars($c['sales']); ?></span></td>
+                          <td class="mdl-data-table__cell--non-numeric"><a href="cisc3003-sugex10-after.php?customer_id=<?php echo htmlspecialchars($c['id'], ENT_QUOTES | ENT_SUBSTITUTE); ?>"><?php echo htmlspecialchars($c['first_name'] . ' ' . $c['last_name'], ENT_QUOTES | ENT_SUBSTITUTE); ?></a></td>
+                          <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($c['university'], ENT_QUOTES | ENT_SUBSTITUTE); ?></td>
+                          <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($c['city'], ENT_QUOTES | ENT_SUBSTITUTE); ?></td>
+                          <td><span class="sparkline"><?php echo htmlspecialchars($c['sales'], ENT_QUOTES | ENT_SUBSTITUTE); ?></span></td>
                         </tr>
 <?php } ?>                                              
                       </tbody>
@@ -104,18 +104,18 @@ if ($selected_customer_id) {
                     </div>
                     <div class="mdl-card__supporting-text">
 <?php if ($selected_customer) { ?>
-                        <h4><?php echo htmlspecialchars($selected_customer['first_name'] . ' ' . $selected_customer['last_name']); ?></h4>
-                        <p>Email: <?php echo htmlspecialchars($selected_customer['email']); ?></p>
-                        <p>University: <?php echo htmlspecialchars($selected_customer['university']); ?></p>
+                        <h4><?php echo htmlspecialchars($selected_customer['first_name'] . ' ' . $selected_customer['last_name'], ENT_QUOTES | ENT_SUBSTITUTE); ?></h4>
+                        <p>Email: <?php echo htmlspecialchars($selected_customer['email'], ENT_QUOTES | ENT_SUBSTITUTE); ?></p>
+                        <p>University: <?php echo htmlspecialchars($selected_customer['university'], ENT_QUOTES | ENT_SUBSTITUTE); ?></p>
                         <p>Address: <?php 
                             $address_parts = array($selected_customer['address'], $selected_customer['city'], $selected_customer['state'], $selected_customer['country']);
                             $address_str = implode(', ', $address_parts);
                             if (!empty($selected_customer['zip'])) {
                                 $address_str .= ', ' . $selected_customer['zip'];
                             }
-                            echo htmlspecialchars($address_str);
+                            echo htmlspecialchars($address_str, ENT_QUOTES | ENT_SUBSTITUTE);
                         ?></p>
-                        <p>Phone: <?php echo htmlspecialchars($selected_customer['phone']); ?></p>
+                        <p>Phone: <?php echo htmlspecialchars($selected_customer['phone'], ENT_QUOTES | ENT_SUBSTITUTE); ?></p>
 <?php } else { ?>
                         <p>Select a customer to view details.</p>
 <?php } ?>
@@ -141,9 +141,9 @@ if ($selected_customer_id) {
     if (count($orders) > 0) {
         foreach ($orders as $order) { ?>
                                 <tr>
-                                  <td class="mdl-data-table__cell--non-numeric"><img src="images/tinysquare/<?php echo htmlspecialchars($order['isbn']); ?>.jpg" alt="Cover" /></td>
-                                  <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($order['isbn']); ?></td>
-                                  <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($order['title']); ?></td>
+                                  <td class="mdl-data-table__cell--non-numeric"><img src="images/tinysquare/<?php echo htmlspecialchars($order['isbn'], ENT_QUOTES | ENT_SUBSTITUTE); ?>.jpg" alt="Cover" /></td>
+                                  <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($order['isbn'], ENT_QUOTES | ENT_SUBSTITUTE); ?></td>
+                                  <td class="mdl-data-table__cell--non-numeric"><?php echo htmlspecialchars($order['title'], ENT_QUOTES | ENT_SUBSTITUTE); ?></td>
                                 </tr>
 <?php   }
     } else { ?>
