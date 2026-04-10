@@ -33,12 +33,12 @@ if ($selected_customer_id) {
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+    <link rel="stylesheet" href="css/material.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/demo-styles.css">
     
     <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <script src="js/material.min.js"></script>
     <script src="js/jquery.sparkline.2.1.2.js"></script>
     <script>
         $(function() {
@@ -164,12 +164,13 @@ if ($selected_customer_id) {
             </div>  <!-- / mdl-grid -->    
 
         </section>
+        
+        <footer>
+            <p style="text-align: center;">CISC3003 Web Programming: dc328023 Jiang Xingyu 2026</p>
+        </footer>
+        
     </main>    
 </div>    <!-- / mdl-layout --> 
-
-<footer>
-    <p style="text-align: center;">CISC3003 Web Programming: dc328023 Jiang Xingyu 2026</p>
-</footer>
 
 </body>
 </html>

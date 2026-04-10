@@ -42,12 +42,14 @@ function readOrders($customer, $filename) {
             $data = explode(',', $line);
             if (count($data) >= 5) {
                 if ($data[1] == $customer) {
+                    $category = array_pop($data);
+                    $title = implode(',', array_slice($data, 3));
                     $orders[] = array(
                         'order_id' => $data[0],
                         'customer_id' => $data[1],
                         'isbn' => $data[2],
-                        'title' => $data[3],
-                        'category' => $data[4]
+                        'title' => $title,
+                        'category' => $category
                     );
                 }
             }
